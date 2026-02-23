@@ -61,6 +61,7 @@
 #include "stm32_usart2.inc"
 
 #include "stm32_tim1.inc"
+#include "stm32_tim2.inc"
 #include "stm32_tim3.inc"
 #include "stm32_tim14.inc"
 #include "stm32_tim16.inc"
@@ -82,6 +83,7 @@ void irqInit(void) {
   exti4_15_irq_init();
 
   tim1_irq_init();
+  tim2_irq_init();
   tim3_irq_init();
   tim14_irq_init();
   tim16_irq_init();
@@ -103,6 +105,7 @@ void irqDeinit(void) {
   exti4_15_irq_deinit();
 
   tim1_irq_deinit();
+  tim2_irq_deinit();
   tim3_irq_deinit();
   tim14_irq_deinit();
   tim16_irq_deinit();
